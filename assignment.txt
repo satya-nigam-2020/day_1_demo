@@ -1,0 +1,106 @@
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (master)
+$ code index.html
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (master)
+$ git add .
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (master)
+$ git commit -m "add a new index.html file in master branch"
+[master ba95778] add a new index.html file in master branch
+ 1 file changed, 74 insertions(+)
+ create mode 100644 index.html
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (master)
+$ add index.css
+bash: add: command not found
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (master)
+$ code index.html
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (master)
+$ code index.css
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (master)
+$ git add .
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (master)
+$ git commit -m "add a new index.css CSS file in master bramch"
+[master 8e305d4] add a new index.css CSS file in master bramch
+ 1 file changed, 79 insertions(+)
+ create mode 100644 index.css
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.93 KiB | 330.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/satya-nigam-2020/day_1_demo.git
+   243fddf..8e305d4  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (master)
+$ git checkout -b test
+Switched to a new branch 'test'
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (test)
+$ code index.html
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (test)
+$ git status
+On branch test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (test)
+$ git add .
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (test)
+$ git status
+On branch test
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (test)
+$ git commit -m "make one change in index.html"
+[test e97fc81] make one change in index.html
+ 1 file changed, 1 insertion(+)
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (test)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (test)
+$ git ckeckout master
+git: 'ckeckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (test)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+satya@DESKTOP-QGTOJ74 MINGW64 /f/Zensar_satya_prakash/day1 (master)
+$ code
